@@ -27,7 +27,12 @@ const About = () => {
         </p>
         <div className="about-buttons-container">
           <button className="secondary-button">Learn More</button>
-          <button className="watch-video-button">
+            <script>
+            function video() {
+              window.open("https://www.youtube.com/shorts/E0rYbgDkvco")
+            }
+            </script>
+          <button className="watch-video-button" onclick="video()">
             <BsFillPlayCircleFill /> Watch Video
           </button>
         </div>
