@@ -18,8 +18,9 @@ const About = () => {
           Food Is An Important Part Of A Balanced Diet
         </h1>
         <p className="primary-text">
-          Lorem ipsum dolor sit amet consectetur. Non tincidunt magna non et
-          elit. Dolor turpis molestie dui magnis facilisis at fringilla quam.
+        It provides the nutrients the body needs for growth, repair, and maintenance, a
+         well as energy to function. A well-balanced diet includes a variety of foods from each of the five food groups, 
+         in the recommended amounts.
         </p>
         <p className="primary-text">
           Non tincidunt magna non et elit. Dolor turpis molestie dui magnis
