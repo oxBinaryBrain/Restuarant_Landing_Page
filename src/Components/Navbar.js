@@ -41,20 +41,28 @@ const Navbar = () => {
       icon: <ShoppingCartRoundedIcon />,
     },
   ];
+
+  const handleBookingNow = () => {
+    window.location.href = "https://xobagom547.wixsite.com/booking"; 
+  };
+
   return (
-    <nav>
+    <nav className="navbar-container">
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>
       <div className="navbar-links-container">
-        <a href="#Contact">Home</a>
-        <a href="">About</a>
-        <a href="">Testimonials</a>
-        <a href="">Contact</a>
-        <a href="">
+        {menuOptions.map((item) => (
+          <a href={`#${item.text}`} key={item.text}>
+            {item.text}
+          </a>
+        ))}
+        <a href="#">
           <BsCart2 className="navbar-cart-icon" />
         </a>
-        <button className="primary-button">Bookings Now</button>
+        <button className="primary-button" onClick={handleBookingNow}>
+          Bookings Now
+        </button>
       </div>
       <div className="navbar-menu-container">
         <HiOutlineBars3 onClick={() => setOpenMenu(true)} />

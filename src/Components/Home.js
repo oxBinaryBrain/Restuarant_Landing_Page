@@ -5,6 +5,10 @@ import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
+  const handleOrderNow = () => {
+    window.location.href = "https://xobagom547.wixsite.com/booking"; 
+  };
+
   return (
     <div className="home-container">
       <Navbar />
@@ -20,7 +24,7 @@ const Home = () => {
             Healthy switcher chefs do all the prep work, like peeding, chopping
             & marinating, so you can cook a fresh food.
           </p>
-          <button className="secondary-button">
+          <button className="secondary-button" onClick={handleOrderNow}>
             Order Now <FiArrowRight />{" "}
           </button>
         </div>
